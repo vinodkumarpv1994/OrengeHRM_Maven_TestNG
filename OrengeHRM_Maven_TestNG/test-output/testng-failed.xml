@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ OrengeHRM Test Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [ OrengeHRM Test Suite]">
   <parameter name="adminPWD" value="Qedge123!@#"/>
   <parameter name="employeePWD" value="Vinod@1994"/>
   <parameter name="employeeUID" value="SaanvikaReddy"/>
   <parameter name="adminUID" value="Admin"/>
-  <test thread-count="5" name="Employee login with Valid Inputs(failed)">
+  <test thread-count="5" name="Admin login with Valid Inputs(failed)">
     <classes>
-      <class name="orengeHRM.TestCases.NewUserRegistration">
+      <class name="orengeHRM.TestCases.AdminLoginWithValidCredentials">
         <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+          <include name="adminLogin"/>
+        </methods>
+      </class> <!-- orengeHRM.TestCases.AdminLoginWithValidCredentials -->
+    </classes>
+  </test> <!-- Admin login with Valid Inputs(failed) -->
+  <test thread-count="5" name="Admin login with InValid Inputs(failed)">
+    <parameter name="adminPWD" value="xxx"/>
+    <parameter name="adminUID" value="abc"/>
+    <classes>
+      <class name="orengeHRM.TestCases.AdminLoginWithInValidCredentials">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+          <include name="adminLogin"/>
+        </methods>
+      </class> <!-- orengeHRM.TestCases.AdminLoginWithInValidCredentials -->
+    </classes>
+  </test> <!-- Admin login with InValid Inputs(failed) -->
+  <test thread-count="5" name="New Employee Registration(failed)">
+    <parameter name="firstName" value="Saanvika"/>
+    <parameter name="lastName" value="Reddy"/>
+    <classes>
+      <class name="orengeHRM.TestCases.NewEmployeeRegistration">
+        <methods>
+          <include name="newEmpReg"/>
           <include name="closeApp"/>
           <include name="launchApp"/>
           <include name="adminlogout"/>
           <include name="adminLogin"/>
-          <include name="userReg"/>
         </methods>
-      </class> <!-- orengeHRM.TestCases.NewUserRegistration -->
+      </class> <!-- orengeHRM.TestCases.NewEmployeeRegistration -->
     </classes>
-  </test> <!-- Employee login with Valid Inputs(failed) -->
+  </test> <!-- New Employee Registration(failed) -->
 </suite> <!-- Failed suite [ OrengeHRM Test Suite] -->

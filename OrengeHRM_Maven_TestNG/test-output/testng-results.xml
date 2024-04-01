@@ -1,37 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-11T16:10:41Z" name=" OrengeHRM Test Suite" finished-at="2024-02-11T16:10:55Z" duration-ms="13954">
+  <suite started-at="2024-04-01T07:02:53Z" name=" OrengeHRM Test Suite" finished-at="2024-04-01T07:03:02Z" duration-ms="8451">
     <groups>
+      <group name="Functional">
+        <method signature="AdminLoginWithInValidCredentials.adminLogin(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.AdminLoginWithInValidCredentials@56de5251]" name="adminLogin" class="orengeHRM.TestCases.AdminLoginWithInValidCredentials"/>
+      </group> <!-- Functional -->
+      <group name="Smoke">
+        <method signature="NewEmployeeRegistration.newEmpReg(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.NewEmployeeRegistration@7c469c48]" name="newEmpReg" class="orengeHRM.TestCases.NewEmployeeRegistration"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-11T16:10:41Z" name="Employee login with Valid Inputs" finished-at="2024-02-11T16:10:55Z" duration-ms="13954">
-      <class name="orengeHRM.TestCases.EmployeeLoginWithValidCredentials">
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:orengeHRM.TestCases.EmployeeLoginWithValidCredentials@7f485fda]" started-at="2024-02-11T16:10:37Z" name="launchApp" finished-at="2024-02-11T16:10:41Z" duration-ms="4266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method signature="empLogin(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.EmployeeLoginWithValidCredentials@7f485fda]" started-at="2024-02-11T16:10:41Z" name="empLogin" finished-at="2024-02-11T16:10:55Z" duration-ms="13940" status="PASS">
+    <test started-at="2024-04-01T07:02:53Z" name="Admin login with Valid Inputs" finished-at="2024-04-01T07:02:56Z" duration-ms="2548">
+      <class name="orengeHRM.TestCases.AdminLoginWithValidCredentials">
+        <test-method signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.AdminLoginWithValidCredentials@3b07a0d6]" started-at="2024-04-01T07:02:53Z" name="adminLogin" finished-at="2024-04-01T07:02:56Z" duration-ms="2522" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[SaanvikaReddy]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Vinod@1994]]>
+                <![CDATA[Qedge123!@#]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- empLogin -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:orengeHRM.TestCases.EmployeeLoginWithValidCredentials@7f485fda]" started-at="2024-02-11T16:10:55Z" name="closeApp" finished-at="2024-02-11T16:10:56Z" duration-ms="111" status="PASS">
+        </test-method> <!-- adminLogin -->
+      </class> <!-- orengeHRM.TestCases.AdminLoginWithValidCredentials -->
+    </test> <!-- Admin login with Valid Inputs -->
+    <test started-at="2024-04-01T07:02:56Z" name="Admin login with InValid Inputs" finished-at="2024-04-01T07:02:57Z" duration-ms="614">
+      <class name="orengeHRM.TestCases.AdminLoginWithInValidCredentials">
+        <test-method signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.AdminLoginWithInValidCredentials@56de5251]" started-at="2024-04-01T07:02:56Z" name="adminLogin" finished-at="2024-04-01T07:02:56Z" duration-ms="603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xxx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+      </class> <!-- orengeHRM.TestCases.AdminLoginWithInValidCredentials -->
+    </test> <!-- Admin login with InValid Inputs -->
+    <test started-at="2024-04-01T07:02:57Z" name="New Employee Registration" finished-at="2024-04-01T07:03:02Z" duration-ms="5232">
+      <class name="orengeHRM.TestCases.NewEmployeeRegistration">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:orengeHRM.TestCases.NewEmployeeRegistration@7c469c48]" started-at="2024-04-01T07:02:49Z" name="launchApp" finished-at="2024-04-01T07:02:53Z" duration-ms="4507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method is-config="true" signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.NewEmployeeRegistration@7c469c48]" started-at="2024-04-01T07:02:57Z" name="adminLogin" finished-at="2024-04-01T07:02:57Z" duration-ms="969" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qedge123!@#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method signature="newEmpReg(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.NewEmployeeRegistration@7c469c48]" started-at="2024-04-01T07:02:57Z" name="newEmpReg" finished-at="2024-04-01T07:03:01Z" duration-ms="3624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Saanvika]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Reddy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newEmpReg -->
+        <test-method is-config="true" signature="adminlogout()[pri:0, instance:orengeHRM.TestCases.NewEmployeeRegistration@7c469c48]" started-at="2024-04-01T07:03:01Z" name="adminlogout" finished-at="2024-04-01T07:03:02Z" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminlogout -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:orengeHRM.TestCases.NewEmployeeRegistration@7c469c48]" started-at="2024-04-01T07:03:02Z" name="closeApp" finished-at="2024-04-01T07:03:02Z" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- orengeHRM.TestCases.EmployeeLoginWithValidCredentials -->
-    </test> <!-- Employee login with Valid Inputs -->
+      </class> <!-- orengeHRM.TestCases.NewEmployeeRegistration -->
+    </test> <!-- New Employee Registration -->
   </suite> <!--  OrengeHRM Test Suite -->
 </testng-results>

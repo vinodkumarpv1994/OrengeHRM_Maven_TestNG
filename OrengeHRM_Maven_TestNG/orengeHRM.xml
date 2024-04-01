@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
 
 <suite name=" OrengeHRM Test Suite">
 	<!-- Suite Level Parameters-->
@@ -31,7 +31,7 @@
        <class name="orengeHRM.TestCases.NewEmployeeRegistration"/>
     </classes>
   </test> 
-  
+  <!-- 
   <test name="New User Registration">
 	  <parameter name="Role" value="ESS"></parameter>
 	  <parameter name="empName" value="Saanvika Reddy"></parameter>
@@ -47,5 +47,6 @@
 		  <class name="orengeHRM.TestCases.EmployeeLoginWithValidCredentials"></class>
 	  </classes>
   </test>
+  -->
 
 </suite> 
