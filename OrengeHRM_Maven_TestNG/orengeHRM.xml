@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name=" OrengeHRM Test Suite">
+	<!-- Suite Level Parameters-->
+      <parameter name="adminUID" value="Admin"></parameter>
+      <parameter name="adminPWD" value="Qedge123!@#"></parameter>
+      
+      <parameter name="employeeUID" value="SaanvikaReddy"></parameter>
+	  <parameter name="employeePWD" value="Vinod@1994"></parameter>
+
+
+  <test name="Admin login with Valid Inputs">
+    <classes>
+       <class name="orengeHRM.TestCases.AdminLoginWithValidCredentials"/>
+    </classes>
+  </test> 
+  
+  <test name="Admin login with InValid Inputs">
+	<parameter name="adminUID" value="abc"></parameter>
+	<parameter name="adminPWD" value="xxx"></parameter>
+    <classes>
+       <class name="orengeHRM.TestCases.AdminLoginWithInValidCredentials"/>
+    </classes>
+  </test>
+  
+  <test name="New Employee Registration">
+	<parameter name="firstName" value="Saanvika"></parameter>
+	<parameter name="lastName" value="Reddy"></parameter>
+    <classes>
+       <class name="orengeHRM.TestCases.NewEmployeeRegistration"/>
+    </classes>
+  </test> 
+  
+  <test name="New User Registration">
+	  <parameter name="Role" value="ESS"></parameter>
+	  <parameter name="empName" value="Saanvika Reddy"></parameter>
+	  <parameter name="userName" value="SaanvikaReddy"></parameter>
+	  <parameter name="userPWD" value="Vinod@1994"></parameter>
+	  <classes>
+		  <class name="orengeHRM.TestCases.NewUserRegistration"></class>
+	  </classes>
+  </test>
+  
+  <test name="Employee login with Valid Inputs">
+	  <classes>
+		  <class name="orengeHRM.TestCases.EmployeeLoginWithValidCredentials"></class>
+	  </classes>
+  </test>
+
+</suite> 

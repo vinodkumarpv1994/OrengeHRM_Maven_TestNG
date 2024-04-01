@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-09T04:57:02Z" name=" OrengeHRM Test Suite" finished-at="2024-02-09T04:57:08Z" duration-ms="5632">
+    <groups>
+    </groups>
+    <test started-at="2024-02-09T04:57:02Z" name="Admin login with Valid Inputs" finished-at="2024-02-09T04:57:07Z" duration-ms="4757">
+      <class name="orengeHRM.TestCases.AdminLoginWithValidCredentials">
+        <test-method signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.AdminLoginWithValidCredentials@35dab4eb]" started-at="2024-02-09T04:57:02Z" name="adminLogin" finished-at="2024-02-09T04:57:07Z" duration-ms="4745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qedge123!@#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+      </class> <!-- orengeHRM.TestCases.AdminLoginWithValidCredentials -->
+    </test> <!-- Admin login with Valid Inputs -->
+    <test started-at="2024-02-09T04:57:07Z" name="Admin login with InValid Inputs" finished-at="2024-02-09T04:57:08Z" duration-ms="821">
+      <class name="orengeHRM.TestCases.AdminLoginWithInValidCredentials">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:orengeHRM.TestCases.AdminLoginWithInValidCredentials@31ea9581]" started-at="2024-02-09T04:56:58Z" name="launchApp" finished-at="2024-02-09T04:57:02Z" duration-ms="4197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="adminLogin(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.AdminLoginWithInValidCredentials@31ea9581]" started-at="2024-02-09T04:57:07Z" name="adminLogin" finished-at="2024-02-09T04:57:08Z" duration-ms="819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xxx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:orengeHRM.TestCases.AdminLoginWithInValidCredentials@31ea9581]" started-at="2024-02-09T04:57:08Z" name="closeApp" finished-at="2024-02-09T04:57:08Z" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- orengeHRM.TestCases.AdminLoginWithInValidCredentials -->
+    </test> <!-- Admin login with InValid Inputs -->
+  </suite> <!--  OrengeHRM Test Suite -->
+</testng-results>

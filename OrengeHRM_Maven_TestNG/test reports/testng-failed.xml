@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ OrengeHRM Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Admin login with InValid Inputs(failed)">
+    <parameter name="adminPWD" value="xxx"/>
+    <parameter name="adminUID" value="abc"/>
+    <classes>
+      <class name="orengeHRM.TestCases.AdminLoginWithInValidCredentials">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+          <include name="adminLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- orengeHRM.TestCases.AdminLoginWithInValidCredentials -->
+    </classes>
+  </test> <!-- Admin login with InValid Inputs(failed) -->
+</suite> <!-- Failed suite [ OrengeHRM Test Suite] -->

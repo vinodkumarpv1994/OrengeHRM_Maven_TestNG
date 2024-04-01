@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ OrengeHRM Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="adminPWD" value="Qedge123!@#"/>
+  <parameter name="employeePWD" value="Vinod@1994"/>
+  <parameter name="employeeUID" value="SaanvikaReddy"/>
+  <parameter name="adminUID" value="Admin"/>
+  <test thread-count="5" name="Employee login with Valid Inputs(failed)">
+    <classes>
+      <class name="orengeHRM.TestCases.NewUserRegistration">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+          <include name="adminlogout"/>
+          <include name="adminLogin"/>
+          <include name="userReg"/>
+        </methods>
+      </class> <!-- orengeHRM.TestCases.NewUserRegistration -->
+    </classes>
+  </test> <!-- Employee login with Valid Inputs(failed) -->
+</suite> <!-- Failed suite [ OrengeHRM Test Suite] -->

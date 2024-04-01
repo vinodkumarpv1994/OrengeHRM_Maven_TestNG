@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-11T16:10:41Z" name=" OrengeHRM Test Suite" finished-at="2024-02-11T16:10:55Z" duration-ms="13954">
+    <groups>
+    </groups>
+    <test started-at="2024-02-11T16:10:41Z" name="Employee login with Valid Inputs" finished-at="2024-02-11T16:10:55Z" duration-ms="13954">
+      <class name="orengeHRM.TestCases.EmployeeLoginWithValidCredentials">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:orengeHRM.TestCases.EmployeeLoginWithValidCredentials@7f485fda]" started-at="2024-02-11T16:10:37Z" name="launchApp" finished-at="2024-02-11T16:10:41Z" duration-ms="4266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="empLogin(java.lang.String, java.lang.String)[pri:0, instance:orengeHRM.TestCases.EmployeeLoginWithValidCredentials@7f485fda]" started-at="2024-02-11T16:10:41Z" name="empLogin" finished-at="2024-02-11T16:10:55Z" duration-ms="13940" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SaanvikaReddy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vinod@1994]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empLogin -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:orengeHRM.TestCases.EmployeeLoginWithValidCredentials@7f485fda]" started-at="2024-02-11T16:10:55Z" name="closeApp" finished-at="2024-02-11T16:10:56Z" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- orengeHRM.TestCases.EmployeeLoginWithValidCredentials -->
+    </test> <!-- Employee login with Valid Inputs -->
+  </suite> <!--  OrengeHRM Test Suite -->
+</testng-results>
